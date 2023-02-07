@@ -2,8 +2,7 @@
 -- create database exp-2
 CREATE DATABASE IF NOT EXISTS exp_2;
 USE exp_2;
--- Create the tables described below:Table name:   CLIENT_MASTER_1Description:      used to store client information.Column namedata typeSizeConstraints CLIENTNOVarchar6Primary key / first letter must start with ‘C’NAMEVarchar20Not NullADDRESS 1Varchar30ADDRESS 2Varchar30CITYVarchar15PINCODEInteger  8STATEVarchar15BALDUEDecimal10,2Table Name:   PRODUCT_MASTER_1                                                                                               Description:    used to store product informationColumn namedata typeSizeAttributesPRODUCTNOVarchar6Primary Key/ first letter must start with ‘P’DESCRIPTIONVarchar15Not NullPROFITPERCENTDecimal4,2Not NullUNIT MEASUREVarchar10Not NullQTYONHANDInteger 8Not NullREORDERL VLInteger 8NotNullSELLPRICEDecimal8,2Not Null COSTPRICEDecimal8,2Not Null  Table Name:    SALESMAN_MASTER _1Description:     used to store salesman information working for the company.Column namedata typeSizeAttributesSALESMANNOVarchar6PrimaryKey/ first letter must start with ‘S’SALESMANNAMEVarchar20Not Null
--- ADDRESS 1Varchar30Not NullADDRESS 2Varchar30CITYVarchar20PINCODEInteger 8STATEVarchar20SALAMTReal  8,2Not Null , Cannot be 0TGTTOGETDecimal 6,2Not Null , Cannot be 0YTDSALESDouble 6,2Not Null REMARKSVarchar60
+-- Create the tables described below:
 -- Client Master 1
 CREATE TABLE IF NOT EXISTS CLIENT_MASTER_1 (
     CLIENTNO VARCHAR(6) CHECK (CLIENTNO LIKE 'C%'),
@@ -50,7 +49,7 @@ VALUES ('Mohak Bajaj', 500093079);
 SELECT *
 FROM AUTHOR;
 -- 2. populate the tables with data with random data
--- Client Master 1 -- populate all the columns with fake data
+-- Client Master 1
 INSERT INTO CLIENT_MASTER_1
 VALUES (
         'C00001',
@@ -235,7 +234,7 @@ SELECT *
 FROM PRODUCT_MASTER_1;
 SELECT *
 FROM SALESMAN_MASTER_1;
--- 4.Create table AUTHOR = {Author_ID, Lastname, Firstname, Email, City, Country}Where:Author_ID –text data type, 5 characters, primary keyLastname –text data type, 15 characters, not nullFirstname –text data type, 15 characters, not nullEmail –text data type, 40 characters,City –text data type, 15 characters,Country –text data type, 15 characters
+-- 4.Create table AUTHOR 
 CREATE TABLE IF NOT EXISTS AUTHOR (
     AUTHOR_ID VARCHAR(5),
     LASTNAME VARCHAR(15) NOT NULL,
@@ -245,15 +244,14 @@ CREATE TABLE IF NOT EXISTS AUTHOR (
     COUNTRY VARCHAR(15),
     PRIMARY KEY (AUTHOR_ID)
 );
--- 5. Create Table BOOK={ Book_ID, Book_Title, Copies)Where :Book_ID –text data type, 5 characters Primary Key Start With Character BBook_Title  -Text  data Type Not Null
--- Copies-No.of copies Data Type int always greater the 2 
+-- 5. Create Table BOOK
 CREATE TABLE IF NOT EXISTS BOOK (
     BOOK_ID VARCHAR(5) CHECK (BOOK_ID like 'B%'),
     BOOK_TITLE VARCHAR(15) NOT NULL,
     COPIES INT CHECK (COPIES > 2),
     PRIMARY KEY (BOOK_ID)
 );
--- 6. Create table AUTHOR_LIST = {Author_ID,Book_ID, Role}Where:Author_ID –text data type, 5 characters, referenced by Author_ID from AUTHORtableBook_ID –text data type, 5 charactersRole –text data type, 15 charactersand primary key is: Author_ID, Book_ID
+-- 6. Create table AUTHOR_LIST
 CREATE TABLE IF NOT EXISTS AUTHOR_LIST (
     AUTHOR_ID VARCHAR(5),
     BOOK_ID VARCHAR(5),
@@ -263,7 +261,6 @@ CREATE TABLE IF NOT EXISTS AUTHOR_LIST (
     FOREIGN KEY (BOOK_ID) REFERENCES BOOK(BOOK_ID)
 );
 -- 7. Add four records in each tables AUTHOR, BOOK, AUTHOR_LIST.
--- insert random values
 INSERT INTO AUTHOR
 VALUES (
         'A001',
