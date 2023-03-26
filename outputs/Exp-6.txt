@@ -1,0 +1,84 @@
+mysql> source D:\Programming\ADBMS\Exp-6.sql
+Query OK, 1 row affected (0.00 sec)
+
+Database changed
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 6 rows affected (0.00 sec)
+Records: 6  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.00 sec)
+
++-------------+-----------+--------+---------------+
+| employee_id | last_name | salary | department_id |
++-------------+-----------+--------+---------------+
+| E001        | Doe       |  10000 | D001          |
+| E002        | Doe       |  20000 | D0020         |
+| E003        | Doe       |  30000 | D003          |
+| E004        | Doe       |  40000 | D0020         |
+| E005        | Doe       |  50000 | D005          |
+| E006        | Doe       |  60000 | D006          |
++-------------+-----------+--------+---------------+
+6 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.05 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
++---------------+----------+------+-----+---------+-------+
+| Field         | Type     | Null | Key | Default | Extra |
++---------------+----------+------+-----+---------+-------+
+| employee_id   | char(10) | NO   | PRI | NULL    |       |
+| first_name    | char(30) | NO   |     | NULL    |       |
+| last_name     | char(30) | YES  |     | NULL    |       |
+| dob           | date     | YES  |     | NULL    |       |
+| salary        | int      | YES  |     | NULL    |       |
+| department_id | char(10) | NO   |     | NULL    |       |
++---------------+----------+------+-----+---------+-------+
+6 rows in set (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
++-------------+-----------+--------+---------------+
+| employee_id | last_name | salary | department_id |
++-------------+-----------+--------+---------------+
+| E001        | Doe       |  10000 | D001          |
+| E002        | Doe       |  20000 | D0020         |
+| E003        | Doe       |  30000 | D003          |
+| E004        | Doe       |  40000 | D0020         |
+| E005        | Doe       |  50000 | D005          |
+| E006        | Doe       |  60000 | D006          |
+| E007        | Doe       |  70000 | D007          |
++-------------+-----------+--------+---------------+
+7 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+Rows matched: 1  Changed: 0  Warnings: 0
+
+Query OK, 1 row affected (0.00 sec)
+
++-------------+-----------+--------+---------------+
+| employee_id | last_name | salary | department_id |
++-------------+-----------+--------+---------------+
+| E002        | Doe       |  20000 | D0020         |
+| E003        | Doe       |  30000 | D003          |
+| E004        | Doe       |  40000 | D0020         |
+| E005        | Doe       |  50000 | D005          |
+| E006        | Doe       |  60000 | D006          |
+| E007        | Doe       |  70000 | D007          |
++-------------+-----------+--------+---------------+
+6 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
++-------------+------------+-----------+---------------+
+| employee_id | first_name | last_name | annual_salary |
++-------------+------------+-----------+---------------+
+| E002        | Jane       | Doe       |        240000 |
+| E004        | John       | Doe       |        480000 |
++-------------+------------+-----------+---------------+
+2 rows in set (0.00 sec)

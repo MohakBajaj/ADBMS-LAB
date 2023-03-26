@@ -1,0 +1,111 @@
+mysql> source D:\Programming\ADBMS\Exp-2.sql
+Query OK, 1 row affected (0.06 sec)
+
+Database changed
+Query OK, 0 rows affected (0.65 sec)
+
+Query OK, 0 rows affected (0.76 sec)
+
+Query OK, 0 rows affected, 1 warning (0.57 sec)
+
+Query OK, 0 rows affected, 1 warning (0.29 sec)
+
+Query OK, 1 row affected (0.05 sec)
+
++-------------+-----------+
+| NAME        | SAPID     |
++-------------+-----------+
+| Mohak Bajaj | 500093079 |
++-------------+-----------+
+1 row in set (0.00 sec)
+
+Query OK, 6 rows affected (0.00 sec)
+Records: 6  Duplicates: 0  Warnings: 0
+
+Query OK, 6 rows affected (0.00 sec)
+Records: 6  Duplicates: 0  Warnings: 0
+
+Query OK, 4 rows affected (0.04 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
++----------+-------------+-----------+-----------+-----------+---------+-----------+----------+
+| CLIENTNO | NAME        | ADDRESS_1 | ADDRESS_2 | CITY      | PINCODE | STATE     | BALDUE   |
++----------+-------------+-----------+-----------+-----------+---------+-----------+----------+
+| C00001   | Mohak Bajaj | Bangalore | 560001    | Karnataka |  560001 | Karnataka | 25000.00 |
+| C00002   | Mohak Bajaj | Bangalore | 560001    | Karnataka |  560001 | Karnataka | 25000.00 |
+| C00003   | Mohak Bajaj | Bangalore | 560001    | Karnataka |  560001 | Karnataka | 25000.00 |
+| C00004   | Mohak Bajaj | Bangalore | 560001    | Karnataka |  560001 | Karnataka | 25000.00 |
+| C00005   | Mohak Bajaj | Bangalore | 560001    | Karnataka |  560001 | Karnataka | 25000.00 |
+| C00006   | Mohak Bajaj | Bangalore | 560001    | Karnataka |  560001 | Karnataka | 25000.00 |
++----------+-------------+-----------+-----------+-----------+---------+-----------+----------+
+6 rows in set (0.00 sec)
+
++-----------+-------------+---------------+--------------+-----------+-------------+-----------+-----------+
+| PRODUCTNO | DESCRIPTION | PROFITPERCENT | UNIT_MEASURE | QTYONHAND | REORDERL_VL | SELLPRICE | COSTPRICE |
++-----------+-------------+---------------+--------------+-----------+-------------+-----------+-----------+
+| P00001    | Laptop      |         10.00 | Pcs          |       100 |          10 |  10000.00 |   9000.00 |
+| P00002    | Mobile      |         10.00 | Pcs          |       100 |          10 |  10000.00 |   9000.00 |
+| P00003    | Tablet      |         10.00 | Pcs          |       100 |          10 |  10000.00 |   9000.00 |
+| P00004    | Laptop      |         10.00 | Pcs          |       100 |          10 |  10000.00 |   9000.00 |
+| P00005    | Laptop      |         10.00 | Pcs          |       100 |          10 |  10000.00 |   9000.00 |
+| P00006    | Laptop      |         10.00 | Pcs          |       100 |          10 |  10000.00 |   9000.00 |
++-----------+-------------+---------------+--------------+-----------+-------------+-----------+-----------+
+6 rows in set (0.00 sec)
+
++------------+--------------+-----------+-----------+--------+---------+-------------+--------+----------+----------+---------+
+| SALESMANNO | SALESMANNAME | ADDRESS_1 | ADDRESS_2 | CITY   | PINCODE | STATE       | SALAMT | TGTTOGET | YTDSALES | REMARKS |
++------------+--------------+-----------+-----------+--------+---------+-------------+--------+----------+----------+---------+
+| S00001     | Aman         | A/14      | Worli     | Mumbai |  400002 | Maharashtra |   3000 |    50000 |     0.00 | Good    |
+| S00002     | Omkar        | 65        | Nariman   | Mumbai |  400001 | Maharashtra |   3500 |    50000 |     0.00 | Good    |
+| S00003     | Raj          | P-7       | Bandra    | Mumbai |  400032 | Maharashtra |   3000 |    50000 |     0.00 | Good    |
+| S00004     | Ashish       | A/5       | Juhu      | Mumbai |  400044 | Maharashtra |   3500 |    50000 |     0.00 | Good    |
++------------+--------------+-----------+-----------+--------+---------+-------------+--------+----------+----------+---------+
+4 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.17 sec)
+
+Query OK, 0 rows affected (0.18 sec)
+
+Query OK, 0 rows affected (0.43 sec)
+
+Query OK, 4 rows affected (0.00 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+Query OK, 4 rows affected (0.00 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+Query OK, 4 rows affected (0.00 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
++-----------+----------+-----------+----------------+-------+---------+
+| AUTHOR_ID | LASTNAME | FIRSTNAME | EMAIL          | CITY  | COUNTRY |
++-----------+----------+-----------+----------------+-------+---------+
+| A001      | Bajaj    | Mohak     | mb@gmail.com   | delhi | india   |
+| A002      | Bajaj    | Mohak     | xyz@gmail.com  | delhi | india   |
+| A003      | Bajaj    | Mohak     | abc@gmail.com  | delhi | india   |
+| A004      | Bajaj    | Mohak     | qqq@gmauil.com | delhi | india   |
++-----------+----------+-----------+----------------+-------+---------+
+4 rows in set (0.00 sec)
+
++---------+------------+--------+
+| BOOK_ID | BOOK_TITLE | COPIES |
++---------+------------+--------+
+| B001    | Book1      |     10 |
+| B002    | Book2      |     10 |
+| B003    | Book3      |     10 |
+| B004    | Book4      |     10 |
++---------+------------+--------+
+4 rows in set (0.00 sec)
+
++-----------+---------+-----------+
+| AUTHOR_ID | BOOK_ID | ROLE      |
++-----------+---------+-----------+
+| A001      | B002    | author    |
+| A002      | B003    | co-author |
+| A003      | B004    | author    |
+| A004      | B001    | author    |
++-----------+---------+-----------+
+4 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0

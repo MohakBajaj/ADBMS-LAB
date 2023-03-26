@@ -1,0 +1,113 @@
+mysql> source D:\Programming\ADBMS\Exp-3.sql
+Query OK, 1 row affected (0.00 sec)
+
+Database changed
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 10 rows affected (0.00 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+Query OK, 10 rows affected (0.00 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+Query OK, 20 rows affected (0.00 sec)
+Records: 20  Duplicates: 0  Warnings: 0
+
++-------+-------+
+| scode | pcode |
++-------+-------+
+|     1 |     2 |
+|     1 |    10 |
+|     2 |     1 |
+|     2 |     3 |
+|     3 |     4 |
+|     3 |     5 |
+|     4 |     6 |
+|     4 |     7 |
+|     5 |     8 |
+|     5 |     9 |
+|     6 |     1 |
+|     6 |    10 |
+|     7 |     2 |
+|     7 |     3 |
+|     8 |     4 |
+|     8 |     5 |
+|     9 |     6 |
+|     9 |     7 |
+|    10 |     8 |
+|    10 |     9 |
++-------+-------+
+20 rows in set (0.00 sec)
+
+Empty set (0.00 sec)
+
++----------+
+| COUNT(*) |
++----------+
+|       10 |
++----------+
+1 row in set (0.00 sec)
+
++-------+
+| pcode |
++-------+
+|     3 |
++-------+
+1 row in set (0.00 sec)
+
+Empty set (0.00 sec)
+
++-------+
+| pcode |
++-------+
+|     2 |
+|     3 |
+|     4 |
++-------+
+3 rows in set (0.00 sec)
+
++----------+
+| SUM(qty) |
++----------+
+|      112 |
++----------+
+1 row in set (0.00 sec)
+
++------------+
+| sname      |
++------------+
+| Supplier 1 |
+| Supplier 7 |
++------------+
+2 rows in set (0.00 sec)
+
++-------+
+| pcode |
++-------+
+|     6 |
+|     7 |
+|     8 |
+|     9 |
+|    10 |
++-------+
+5 rows in set (0.00 sec)
+
++-------+----------+
+| scode | turnover |
++-------+----------+
+|    10 |     1000 |
+|     9 |      900 |
+|     8 |      800 |
+|     7 |      700 |
+|     6 |      600 |
+|     5 |      500 |
+|     4 |      400 |
+|     3 |      300 |
+|     2 |      200 |
+|     1 |      100 |
++-------+----------+
+10 rows in set (0.00 sec)

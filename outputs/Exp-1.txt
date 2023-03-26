@@ -1,0 +1,125 @@
+mysql> source D:\Programming\ADBMS\Exp-1.sql
+Query OK, 1 row affected (0.00 sec)
+
+Database changed
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected, 1 warning (0.01 sec)
+
+Query OK, 0 rows affected, 1 warning (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
++-------------+-----------+
+| NAME        | SAPID     |
++-------------+-----------+
+| Mohak Bajaj | 500093079 |
++-------------+-----------+
+1 row in set (0.00 sec)
+
+Query OK, 6 rows affected (0.00 sec)
+Records: 6  Duplicates: 0  Warnings: 0
+
+Query OK, 9 rows affected (0.00 sec)
+Records: 9  Duplicates: 0  Warnings: 0
+
+Query OK, 4 rows affected (0.00 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
++----------------+
+| NAME           |
++----------------+
+| Ivan bayross   |
+| Mamta muzumdar |
+| Chhaya bankar  |
+| Ashwini joshi  |
+| Hansel colaco  |
+| Deepak sharma  |
++----------------+
+6 rows in set (0.00 sec)
+
++----------+----------------+-----------+---------+-------------+----------+
+| CLIENTNO | NAME           | CITY      | PINCODE | STATE       | BALDUE   |
++----------+----------------+-----------+---------+-------------+----------+
+| C00001   | Ivan bayross   | Mumbai    |  400054 | Maharashtra | 15000.00 |
+| C00002   | Mamta muzumdar | Madras    |  780001 | Tamil nadu  |     0.00 |
+| C00003   | Chhaya bankar  | Mumbai    |  400057 | Maharashtra |  5000.00 |
+| C00004   | Ashwini joshi  | Bangalore |  560001 | Karnataka   |     0.00 |
+| C00005   | Hansel colaco  | Mumbai    |  400060 | Maharashtra |  2000.00 |
+| C00006   | Deepak sharma  | Mangalore |  560050 | Karnataka   |     0.00 |
++----------+----------------+-----------+---------+-------------+----------+
+6 rows in set (0.00 sec)
+
++----------------+-----------+-------------+
+| NAME           | CITY      | STATE       |
++----------------+-----------+-------------+
+| Ivan bayross   | Mumbai    | Maharashtra |
+| Mamta muzumdar | Madras    | Tamil nadu  |
+| Chhaya bankar  | Mumbai    | Maharashtra |
+| Ashwini joshi  | Bangalore | Karnataka   |
+| Hansel colaco  | Mumbai    | Maharashtra |
+| Deepak sharma  | Mangalore | Karnataka   |
++----------------+-----------+-------------+
+6 rows in set (0.00 sec)
+
++--------------+
+| DESCRIPTION  |
++--------------+
+| T-Shirt      |
+| Shirts       |
+| Cotton jeans |
+| Jeans        |
+| Trousers     |
+| Pull Overs   |
+| Denim jeans  |
+| Lycra tops   |
+| Skirts       |
++--------------+
+9 rows in set (0.00 sec)
+
++----------+---------------+--------+---------+-------------+----------+
+| CLIENTNO | NAME          | CITY   | PINCODE | STATE       | BALDUE   |
++----------+---------------+--------+---------+-------------+----------+
+| C00001   | Ivan bayross  | Mumbai |  400054 | Maharashtra | 15000.00 |
+| C00003   | Chhaya bankar | Mumbai |  400057 | Maharashtra |  5000.00 |
+| C00005   | Hansel colaco | Mumbai |  400060 | Maharashtra |  2000.00 |
++----------+---------------+--------+---------+-------------+----------+
+3 rows in set (0.00 sec)
+
++--------------+
+| SALESMANNAME |
++--------------+
+| Aman         |
+| Raj          |
++--------------+
+2 rows in set (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Query OK, 4 rows affected (0.00 sec)
+Rows matched: 4  Changed: 4  Warnings: 0
+
+Query OK, 2 rows affected (0.00 sec)
+
+Query OK, 4 rows affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+Query OK, 5 rows affected (0.02 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
